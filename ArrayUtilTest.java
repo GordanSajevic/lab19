@@ -13,5 +13,11 @@ public class ArrayUtilTest {
 		System.out.println("\nDrugi niz: ");
 		ArrayUtil.printArray(arr);
 		arr2 = ArrayUtil.getArray(5, -1);
-		ArrayUtil.moveToLeft(arr, arr2);
+		ArrayUtil.moveToLeft(arr);
+		System.out.println("\nNiz pomjeren ljevlje: ");
+		ArrayUtil.printArray(arr);
+		ArrayUtil.moveToRight(arr);
+		System.out.println("\nNiz pomjeren dešnje: ");
+		ArrayUtil.printArray(arr);
 	}
+}
