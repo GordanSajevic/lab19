@@ -49,6 +49,12 @@ public class ArrayUtil {
 		return niz;
 	}
 	
+	/**
+	 * Funkcija kopira jedan niz u drugi
+	 * @param niz1
+	 * @param niz2
+	 */
+	
 	public static void copyArray2(int[] niz1, int[] niz2)
 	{
 		if (niz1.length < niz2.length)
@@ -75,6 +81,14 @@ public class ArrayUtil {
 			}
 		}	
 	}
+	
+	/**
+	 * Funkcija kopira jedan niz u drugi i vraća drugi niz
+	 * @param niz1
+	 * @param niz2
+	 * @return
+	 */
+	
 	public static int[] copyArray(int[] niz1, int[] niz2)
 	{
 		if (niz1.length < niz2.length)
@@ -104,6 +118,13 @@ public class ArrayUtil {
 			return niz2;
 		}
 		
+	}
+	
+	/**
+	 * Funkcija pomjera sve članove niza lijevo
+	 * @param niz1
+	 */
+	
 	public static void moveToLeft(int[] niz1)
 	{
 		for (int i=0; i<niz1.length-1; i++)
@@ -113,6 +134,11 @@ public class ArrayUtil {
 		niz1[niz1.length-1] = 0;
 	}
 	
+	/**
+	 * Funkcija pomjera sve članove niza desno
+	 * @param niz1
+	 */
+	
 	public static void moveToRight(int[] niz1)
 	{
 		for (int i=niz1.length-1; i>0; i--)
@@ -121,6 +147,5 @@ public class ArrayUtil {
 		}
 		niz1[0] = 0;
 	}
-		
-	}
+	
 }
