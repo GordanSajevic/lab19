@@ -1,7 +1,6 @@
 package lab19;
 
 public class ArrayUtilTest {
-
 	public static void main(String[] args) {
 		int[] arr = ArrayUtil.getUserArray(6);
 		System.out.println("\nPrvi niz: ");
@@ -19,5 +18,9 @@ public class ArrayUtilTest {
 		ArrayUtil.moveToRight(arr);
 		System.out.println("\nNiz pomjeren dešnje: ");
 		ArrayUtil.printArray(arr);
+		int[][] matrica = ArrayUtil.createMatrix(3, 3);
+		int[] red = ArrayUtil.arrayFromMatrix(matrica, 2);
+		ArrayUtil.printArray(red);
 	}
+	
 }
