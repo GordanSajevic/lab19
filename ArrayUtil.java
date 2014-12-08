@@ -104,5 +104,23 @@ public class ArrayUtil {
 			return niz2;
 		}
 		
+	public static void moveToLeft(int[] niz1)
+	{
+		for (int i=0; i<niz1.length-1; i++)
+		{
+			niz1[i] = niz1[i+1];
+		}
+		niz1[niz1.length-1] = 0;
+	}
+	
+	public static void moveToRight(int[] niz1)
+	{
+		for (int i=niz1.length-1; i>0; i--)
+		{
+			niz1[i] = niz1[i-1];
+		}
+		niz1[0] = 0;
+	}
+		
 	}
 }
